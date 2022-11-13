@@ -1,9 +1,7 @@
 #include <iostream>
 #include <string>
-#include <stdlib.h>
 #include <string.h>
 #include <fstream>
-#include <conio.h>
 
 using namespace std;
 
@@ -76,7 +74,7 @@ int main() {
 	}
 }
 void alta() {
-	int opcion = 0, CT = 0, num = 0, i, cita = 0, op2 = 0;
+	int opcion = 0, CT = 0, num = 0, i, articulo = 0, op2 = 0;
 
 	while (jugador) {
 		for (i = 0; i < 5; i++)
@@ -155,7 +153,7 @@ void escribirauto() {
 	}
 	else
 	{
-		archivo << "La cita que fue ingresada en la posicion   " << i + 1 << "|" << NumeroDeArticulo[i].nombre
+		archivo << "El juego fue ingresado en la posicion   " << i + 1 << "|" << NumeroDeArticulo[i].nombre
 			<< "|" << NumeroDeArticulo[i].ano << "/" << NumeroDeArticulo[i].mes
 			<< "|" << NumeroDeArticulo[i].Clasificacion
 			<< "|" << NumeroDeArticulo[i].videojuego
@@ -263,6 +261,6 @@ void actualizarvideojuego() {
 	rename("tienda.txt", "TiendaDeVideojuegos.txt");
 }
 
-	
-	
+
+
 
